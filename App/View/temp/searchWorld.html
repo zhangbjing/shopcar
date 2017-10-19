@@ -1,0 +1,42 @@
+<h3 class="text-center p10">冬季必备6</h3>
+<div class="text-center p10">
+    <label for="">
+        <input ng-model="ipt" type="text" placeholder="请输入要添加的商品">
+        <button ng-click="change(ipt)">添加</button>
+    </label>
+</div>
+<div class="list-group">
+    <div class="list-group-item-heading">
+        <label for="searchText">产品查询</label>
+        <input type="text" id="searchText" class="form-control" placeholder="请输入查询的产品名称" ng-model="searchText">
+    </div>
+    <div>
+        <p class="list-group-item list-group-item-heading list-group-item-info clearfix">
+            <span class="col-xs-3">
+                商品编号
+                <span ng-click="sort('id')">
+                    <i class="glyphicon" ng-class="{true: 'glyphicon-menu-up', false: 'glyphicon-menu-down'}[sortFlag.id]"></i>
+                </span>
+            </span>
+            <span class="col-xs-3">
+                商品名称
+                <span ng-click="sort('name')">
+                    <i class="glyphicon" ng-class="{true: 'glyphicon-menu-up', false: 'glyphicon-menu-down'}[sortFlag.name]"></i>
+                </span>
+            </span>
+            <span class="col-xs-3">
+                商品价格
+                <span ng-click="sort('price')">
+                    <i class="glyphicon" ng-class="{true: 'glyphicon-menu-up', false: 'glyphicon-menu-down'}[sortFlag.price]"></i>
+                </span>
+            </span>
+            <span class="col-xs-3"></span>
+        </p>
+        <p class="list-group-item clearfix" ng-repeat="set in sets | filter : searchText | orderBy : sortName : sortDir">
+            <span class="col-xs-3">{{set.id}}</span>
+            <span class="col-xs-3">{{set.name}}</span>
+            <span class="col-xs-3">{{set.price}}</span>
+            <span class="col-xs-3 text-center" ng-click="delete(set.id)">X</span>
+        </p>
+    </div>
+</div>

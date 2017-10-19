@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1.0"/>
+    <title></title>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth/375*50+'px';
+    </script>
+    <link rel="stylesheet" href="Content/css/ionic.min.css">
+
+    <link rel="stylesheet" href="Content/css/bootstrap.css">
+    <link rel="stylesheet" href="Content/css/common.css">
+    <link rel="stylesheet" href="Content/css/reset.css">
+    <link rel="stylesheet" href="Content/css/style.css">
+    <link rel="stylesheet" href="Content/css/logo.css">
+    <link rel="stylesheet" href="Content/css/pull.css">
+    <link rel="stylesheet" href="Content/css/tab.css">
+    <link rel="stylesheet" href="Content/css/shop.css">
+</head>
+<body ng-app="myApp">
+    <div class="box">
+        <header class="header"><a href="javascript:;">我的页面</a></header>
+        <section class="section">
+            <div class="container p10">
+                <!--<ng-view></ng-view>-->
+                <ui-view></ui-view>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <a ng-href="#/logo">轮播图</a>
+            <a ng-href="#/pull">手风琴</a>
+            <a ng-href="#/tab">tab切换</a>
+            <a ng-href="#/search">模糊查询</a>
+            <a ng-href="#/shop">购物车</a>
+        </footer>
+    </div>
+    <script type="text/javascript" src="Script/ionic/ionic.min.js"></script>
+    <script type="text/javascript" src="Script/ionic/ionic.bundle.js"></script>
+    <script type="text/javascript" src="Script/angular/angular.min.js"></script>
+    <script type="text/javascript" src="Script/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Script/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="Script/angular-ui/angular-ui-router.js"></script>
+
+    <script type="text/javascript" src="App/app.js"></script>
+    <script type="text/javascript" src="App/Service/ajaxServer.js"></script>
+    <script type="text/javascript" src="App/Service/logoServer.js"></script>
+    <script type="text/javascript" src="App/Service/pullServer.js"></script>
+    <script type="text/javascript" src="App/Service/tabServer.js"></script>
+    <script type="text/javascript" src="App/Service/search.js"></script>
+    <script type="text/javascript" src="App/Service/shopping.js"></script>
+
+    <script type="text/javascript" src="App/Controller/logoController.js"></script>
+    <script type="text/javascript" src="App/Controller/pullController.js"></script>
+    <script type="text/javascript" src="App/Controller/tabController.js"></script>
+    <script type="text/javascript" src="App/Controller/searController.js"></script>
+    <script type="text/javascript" src="App/Controller/shopController.js"></script>
+    <script type="text/javascript" src="App/Controller/shopCarItemController.js"></script>
+
+    <script type="text/javascript" src="App/Directive/logoDirective.js"></script>
+    <script type="text/javascript" src="App/Directive/pullDirective.js"></script>
+    <script type="text/javascript" src="App/Directive/tabDirective.js"></script>
+    <script type="text/javascript" src="App/Directive/searDirective.js"></script>
+    <script type="text/javascript" src="App/Directive/shopDirective.js"></script>
+</body>
+</html>

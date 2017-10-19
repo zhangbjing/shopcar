@@ -1,0 +1,11 @@
+<div class="tab panel panel-primary">
+    <div class="uls tab-head panel-heading clearfix text-center">
+        <p class="col-xs-4" ng-class="{active:$first}" ng-repeat="tab in tabs">{{tab.title}}</p>
+    </div>
+    <div class="panel-body tab-body ols">
+        <div class="lis" ng-repeat="tab in tabs">
+            <span>{{tab.username}}</span>
+            <p><img ng-src="{{tab.imgUrl}}" alt=""></p>
+        </div>
+    </div>
+</div>

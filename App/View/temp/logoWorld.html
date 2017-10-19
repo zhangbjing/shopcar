@@ -1,0 +1,11 @@
+<div class="panel panel-primary logoBox">
+    <ul class="text-center">
+        <li ng-repeat="logo in logos"><img ng-src={{logo.imgUrl}} alt=""></li>
+    </ul>
+    <ol>
+        <li ng-repeat="logo in logos" ng-class="{bg:$first}"><span>{{logo.num}}</span></li>
+    </ol>
+    <div class="left"> < </div>
+    <div class="right"> > </div>
+</div>
+<!--<div ng-click="sayBye()">222</div>-->

@@ -1,0 +1,20 @@
+<div class="items">
+    <span id="itemChecked" class="chose" ng-class="{on:item.state}" ng-click="itemChecked(index)"></span>
+    <div class="pic">
+        <img ng-src="{{item.imgUrl}}" alt="">
+    </div>
+    <div class="con">
+        <p>
+            <span class="bicname">{{item.name}}</span>
+            <span class="del" ng-click="deleteItem(index)">x</span>
+        </p>
+        <p>
+            <span class="price">￥{{item.price}}</span>
+            <span>
+                <span class="reduce" ng-click="itemCount('-')">-</span>
+                <span class="count">{{item.num}}</span>
+                <span class="add" ng-click="itemCount('+')">+</span>
+            </span>
+        </p>
+    </div>
+</div>

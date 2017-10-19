@@ -1,0 +1,64 @@
+.logoBox{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    width: 370px;
+    height: 250px;
+    margin-left: -300px;
+    margin-top: -200px;
+    overflow: hidden;
+}
+ul{
+    height: 250px;
+    position: relative;
+}
+ul li{
+    width: 370px;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+.left,.right{
+    width: 30px;
+    height: 40px;
+    background: #000;
+    opacity: .4;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.left{
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 45%;
+}
+ul li img{
+    width: 100%;
+    height: 100%;
+}
+ol{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+ol li{
+    float: left;
+    width: 25px;
+    height: 25px;
+    background: #f74d4d;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+}
+.bg{
+    background: hotpink;
+    color: #000;
+}
